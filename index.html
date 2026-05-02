@@ -65,8 +65,12 @@
   </div>
 
   <!-- ========== HERO ========== -->
-  <section class="hero">
-    <div class="hero-bg-overlay"></div>
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <img src="https://picsum.photos/seed/monacs-hero-wide/1920/1080" alt="Monacs Hospital" class="hero-bg-img">
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-particles" id="heroParticles"></div>
     <div class="container hero-inner">
       <div class="hero-content">
         <span class="hero-badge reveal-item">
@@ -80,29 +84,43 @@
         <p class="hero-subtitle reveal-item">Providing exceptional healthcare services with state-of-the-art facilities and expert specialists in Ongata Rongai, Kajiado County.</p>
         <div class="hero-actions reveal-item">
           <a href="services.html" class="btn btn-primary btn-lg">Explore Our Services</a>
-          <a href="contact.html" class="btn btn-outline btn-lg">Book Appointment</a>
+          <a href="contact.html" class="btn btn-outline-white btn-lg">Book Appointment</a>
         </div>
       </div>
-      <div class="hero-visual">
-        <div class="hero-image-wrapper reveal-item">
-          <img src="https://picsum.photos/seed/monacs-hero-doc/700/900" alt="Monacs Hospital healthcare professional" loading="eager">
-          <div class="hero-image-accent"></div>
-        </div>
-        <div class="hero-floating-card hero-float-1 reveal-item">
-          <i class="fa-solid fa-clock"></i>
-          <div>
+      <div class="hero-cards">
+        <div class="hero-floating-card reveal-item">
+          <div class="hero-card-icon"><i class="fa-solid fa-clock"></i></div>
+          <div class="hero-card-text">
             <strong>24/7</strong>
             <span>Emergency Care</span>
           </div>
         </div>
-        <div class="hero-floating-card hero-float-2 reveal-item">
-          <i class="fa-solid fa-user-doctor"></i>
-          <div>
+        <div class="hero-floating-card reveal-item">
+          <div class="hero-card-icon"><i class="fa-solid fa-user-doctor"></i></div>
+          <div class="hero-card-text">
             <strong>25+</strong>
             <span>Specialists</span>
           </div>
         </div>
+        <div class="hero-floating-card reveal-item">
+          <div class="hero-card-icon"><i class="fa-solid fa-bed"></i></div>
+          <div class="hero-card-text">
+            <strong>Modern</strong>
+            <span>Facilities</span>
+          </div>
+        </div>
+        <div class="hero-floating-card reveal-item">
+          <div class="hero-card-icon"><i class="fa-solid fa-heart-pulse"></i></div>
+          <div class="hero-card-text">
+            <strong>5000+</strong>
+            <span>Patients Served</span>
+          </div>
+        </div>
       </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
     </div>
   </section>
 

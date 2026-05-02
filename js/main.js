@@ -472,29 +472,54 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     }
 
-    // ---- Hero floating cards parallax ----
-    var heroFloat1 = document.querySelector('.hero-float-1');
-    var heroFloat2 = document.querySelector('.hero-float-2');
+    // ---- Hero parallax scroll effect ----
+    var heroBgImg = document.querySelector('.hero-bg-img');
+    var heroSection = document.getElementById('hero');
 
-    if (heroFloat1 && heroFloat2) {
-      gsap.to(heroFloat1, {
-        y: -20,
-        duration: 3,
-        repeat: -1,
-        yoyo: true,
-        ease: 'sine.inOut'
-      });
-
-      gsap.to(heroFloat2, {
-        y: -15,
-        duration: 2.5,
-        repeat: -1,
-        yoyo: true,
-        ease: 'sine.inOut',
-        delay: 0.5
+    if (heroBgImg && heroSection) {
+      gsap.to(heroBgImg, {
+        scrollTrigger: {
+          trigger: heroSection,
+          start: 'top top',
+          end: 'bottom top',
+          scrub: 0.5,
+          invalidateOnRefresh: true
+        },
+        y: '15%',
+        ease: 'none'
       });
     }
 
+    // ---- Hero content parallax (text moves slower) ----
+    var heroContent = document.querySelector('.hero-content');
+    if (heroContent && heroSection) {
+      gsap.to(heroContent, {
+        scrollTrigger: {
+          trigger: heroSection,
+          start: 'top top',
+          end: 'bottom top',
+          scrub: 0.3
+        },
+        y: '8%',
+        opacity: 0.3,
+        ease: 'none'
+      });
+    }
+
+    // ---- Hero cards parallax (cards move slightly differently) ----
+    var heroCards = document.querySelector('.hero-cards');
+    if (heroCards && heroSection) {
+      gsap.to(heroCards, {
+        scrollTrigger: {
+          trigger: heroSection,
+          start: 'top top',
+          end: 'bottom top',
+          scrub: 0.4
+        },
+        y: '12%',
+        ease: 'none'
+      });
+    }
     // ---- CTA box scale-in effect ----
     var ctaBox = document.querySelector('.cta-box');
     if (ctaBox) {
@@ -612,6 +637,31 @@ document.addEventListener('DOMContentLoaded', function() {
     document.querySelectorAll('img[data-src]').forEach(function(img) {
       imageObserver.observe(img);
     });
+  }
+
+    // ---------- HERO PARTICLES ----------
+  var particlesContainer = document.getElementById('heroParticles');
+  if (particlesContainer) {
+    var particleCount = window.innerWidth < 768 ? 12 : 24;
+
+    for (var i = 0; i < particleCount; i++) {
+      var particle = document.createElement('div');
+      particle.classList.add('hero-particle');
+
+      var size = Math.random() * 6 + 2;
+      var left = Math.random() * 100;
+      var delay = Math.random() * 15;
+      var duration = Math.random() * 10 + 12;
+
+      particle.style.width = size + 'px';
+      particle.style.height = size + 'px';
+      particle.style.left = left + '%';
+      particle.style.bottom = '-20px';
+      particle.style.animationDelay = delay + 's';
+      particle.style.animationDuration = duration + 's';
+
+      particlesContainer.appendChild(particle);
+    }
   }
 
 });
