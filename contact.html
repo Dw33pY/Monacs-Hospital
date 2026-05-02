@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Monacs Hospital Kenya</title>
+  <meta name="description" content="Contact Monacs Hospital Kenya in Ongata Rongai. Book appointments, reach our 24/7 emergency line, or visit us in Kajiado County.">
+  <meta property="og:title" content="Contact — Monacs Hospital Kenya">
+  <meta property="og:description" content="Get in touch with Monacs Hospital Kenya. Book appointments, reach our emergency line, or visit us in Ongata Rongai.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://picsum.photos/seed/monacs-contact-og/1200/630">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ========== PRELOADER ========== -->
+  <div id="preloader">
+    <div class="preloader-inner">
+      <div class="preloader-ekg">
+        <svg viewBox="0 0 300 60" class="ekg-line">
+          <polyline points="0,30 60,30 75,30 85,10 95,50 105,20 115,40 125,30 180,30 195,30 205,10 215,50 225,20 235,40 245,30 300,30" fill="none" stroke="#0F766E" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <p class="preloader-text">Monacs Hospital</p>
+    </div>
+  </div>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav id="navbar" class="navbar">
+    <div class="container navbar-inner">
+      <a href="index.html" class="navbar-logo">
+        <span class="logo-icon"><i class="fa-solid fa-heart-pulse"></i></span>
+        <span class="logo-text">Monacs</span>
+      </a>
+      <ul class="navbar-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="index.html#faq">FAQ</a></li>
+      </ul>
+      <a href="contact.html" class="btn btn-primary navbar-cta">Contact Us</a>
+      <button class="navbar-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ========== MOBILE MENU ========== -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul class="mobile-menu-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="index.html#faq">FAQ</a></li>
+    </ul>
+    <a href="contact.html" class="btn btn-primary mobile-cta">Contact Us</a>
+  </div>
+
+  <!-- ========== PAGE HERO ========== -->
+  <section class="page-hero">
+    <div class="page-hero-overlay"></div>
+    <div class="container page-hero-inner">
+      <span class="page-hero-tag reveal-item"><i class="fa-solid fa-envelope"></i> Contact</span>
+      <h1 class="page-hero-title reveal-item">Get in <span class="accent-text">Touch</span></h1>
+      <p class="page-hero-subtitle reveal-item">Reach out to our team for appointments, inquiries, or emergency support.</p>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT INFO CARDS ========== -->
+  <section class="section contact-info-section">
+    <div class="container">
+      <div class="contact-cards-grid">
+        <div class="contact-info-card reveal-up">
+          <div class="contact-info-icon"><i class="fa-solid fa-location-dot"></i></div>
+          <h3>Our Location</h3>
+          <p>Ongata Rongai, Kajiado County, Kenya</p>
+        </div>
+        <div class="contact-info-card reveal-up">
+          <div class="contact-info-icon"><i class="fa-solid fa-phone"></i></div>
+          <h3>Call Us</h3>
+          <p><a href="tel:+254791528531">+254 791 52 85 31</a></p>
+          <span class="contact-note">Available 24/7 for emergencies</span>
+        </div>
+        <div class="contact-info-card reveal-up">
+          <div class="contact-info-icon"><i class="fa-solid fa-envelope"></i></div>
+          <h3>Email Us</h3>
+          <p><a href="mailto:info@tabihospital.com">info@tabihospital.com</a></p>
+        </div>
+        <div class="contact-info-card reveal-up">
+          <div class="contact-info-icon"><i class="fa-solid fa-clock"></i></div>
+          <h3>Working Hours</h3>
+          <p>Emergency: 24/7</p>
+          <span class="contact-note">Consultations: Mon-Sat 8am-6pm</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT FORM + MAP ========== -->
+  <section class="section contact-form-section">
+    <div class="container">
+      <div class="split-layout">
+        <div class="split-content reveal-left">
+          <span class="section-tag">Send a Message</span>
+          <h2 class="section-title">Reach Out to <span class="accent-text">Our Team</span></h2>
+          <p class="section-text">Contact Monacs Hospital Kenya in Ongata Rongai for hospital services, appointments, and specialist inquiries.</p>
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="How can we help you?" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg btn-full">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+            <div class="form-feedback" id="formFeedback"></div>
+          </form>
+        </div>
+        <div class="split-image reveal-right">
+          <div class="contact-map">
+            <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=36.7%2C-1.41%2C36.78%2C-1.35&layer=mapnik&marker=-1.3873%2C36.7625" width="100%" height="100%" style="border:0; border-radius:16px;" allowfullscreen loading="lazy" title="Monacs Hospital Location Map"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CTA ========== -->
+  <section class="section cta-section">
+    <div class="container">
+      <div class="cta-box reveal-up">
+        <div class="cta-content">
+          <h2>Discover Quality <span class="accent-text">Healthcare</span> Services</h2>
+          <p>At Monacs Hospital Kenya, we offer top-notch medical care tailored to you. Visit us in Ongata Rongai for your health needs.</p>
+          <div class="cta-actions">
+            <a href="services.html" class="btn btn-white btn-lg">Our Services</a>
+            <a href="about.html" class="btn btn-outline-white btn-lg">About Us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-about">
+          <a href="index.html" class="footer-logo">
+            <span class="logo-icon"><i class="fa-solid fa-heart-pulse"></i></span>
+            <span class="logo-text">Monacs</span>
+          </a>
+          <p>Providing compassionate, innovative healthcare for Ongata Rongai, Kajiado County and beyond. Your health is our mission.</p>
+          <div class="footer-socials">
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html#faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services.html">Comprehensive Medical Care</a></li>
+            <li><a href="services.html">Surgical Procedures</a></li>
+            <li><a href="services.html">Emergency Services</a></li>
+            <li><a href="services.html">Maternity Care</a></li>
+            <li><a href="services.html">Diabetes Management</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact Info</h4>
+          <ul class="footer-contact">
+            <li><i class="fa-solid fa-location-dot"></i> Ongata Rongai, Kajiado County, Kenya</li>
+            <li><i class="fa-solid fa-phone"></i> <a href="tel:+254791528531">+254 791 52 85 31</a></li>
+            <li><i class="fa-solid fa-envelope"></i> <a href="mailto:info@tabihospital.com">info@tabihospital.com</a></li>
+            <li><i class="fa-solid fa-clock"></i> 24/7 Emergency Care</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Monacs Hospital Kenya. All rights reserved.</p>
+        <p class="footer-credit">Prescribed by <a href="https://dw33py.netlify.app" target="_blank" rel="noopener">Dw33pY</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== FLOATING BUTTONS ========== -->
+  <a href="https://wa.me/254791528531" target="_blank" rel="noopener" class="whatsapp-btn" aria-label="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+    <span class="whatsapp-pulse"></span>
+  </a>
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
